@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_to_the_app">Welcome to the App!</string>
+    <string name="please_answer_the_following_questions">Please answer the following questions:</string>
+    <string name="_1_gender">1. Gender</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="_4_have_you_been_clinically_diagnosed_with_pd">4. Have you been clinically diagnosed with Parkinson\'s Disease?</string>
+    <string name="ambidextrous">Ambidextrous</string>
+    <string name="right_handed">Right Handed</string>
+    <string name="left_handed">Left Handed</string>
+    <string name="_3_which_one_do_you_identify_yourself_as">3. Which one do you identify yourself as?</string>
+    <string name="zero">0s</string>
+    <string name="restart">To reset the timer to 30s, click on the RESTART button.</string>
+    <string name="start">Click on the START button when you are ready to start.</string>
+    <string name="begin_task">Begin Task</string>
+    <string name="tap">Tap the two circles as fast and as accurately as possible.</string>
+    <string name="flat">Place the phone on a flat surface. Use the index finger and middle finger of the dominant hand.</string>
+    <string name="alternately">The task involves alternately tapping inside the two circles on the screen.</string>
+    <string name="instructions">Instructions:</string>
+    <string name="next">NEXT</string>
+    <string name="_2_age">2. Age</string>
+    <string name="other">Other</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="restart_button">Restart</string>
+    <string name="start_button">Start</string>
+    <string name="_30s">30s</string>
+    <string name="TAP">TAP</string>
+    <string name="done">Done</string>
+    <string name="medication">When was the last time you took medication?</string>
+    <string name="what_medication">What medication are you taking for Parkinson\'s Disease?</string>
+    <string name="diagnosis">When were you diagnosed with Parkinson\'s Disease?</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+</resources>

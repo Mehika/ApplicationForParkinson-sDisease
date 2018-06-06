@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.mehikamanocha.app.OnlyPDquestions">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context="com.example.mehikamanocha.app.FingerTapping">
+
+        <include
+            android:id="@id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/whenDiagnosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/diagnosis"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/datePD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/whenDiagnosed"
+            android:layout_below="@+id/whenDiagnosed"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/askMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/datePD"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/what_medication"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <EditText
+            android:id="@+id/EnterMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/askMedication"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <TextView
+            android:id="@+id/askTimeforMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/EnterMedication"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/medication"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <EditText
+            android:id="@+id/EnterTimeForMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/askTimeforMedication"
+            android:layout_marginStart="16dp"
+            android:ems="9"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <TextView
+            android:id="@+id/askEBS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/EnterTimeForMedication"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:text="Are you taking or have ever taken       Deep Brain Simulation?"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <RadioGroup
+            android:id="@+id/EnterEBS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/askEBS"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/EBS_YES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="EBS"
+                android:text="@string/yes"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/EBS_NO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:onClick="EBS"
+                android:text="@string/no"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/EnterEBS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="goToFingerTapping"
+            android:text="@string/done" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
